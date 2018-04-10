@@ -25,6 +25,10 @@
 		94795F64207C65DB001C504E /* LibraryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94795F63207C65DB001C504E /* LibraryTableViewController.swift */; };
 		94795F66207C6B67001C504E /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94795F65207C6B67001C504E /* MusicTableViewCell.swift */; };
 		94795F68207C6CAC001C504E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94795F67207C6CAC001C504E /* 1.jpg */; };
+		94795F6B207C77F6001C504E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94795F6A207C77F6001C504E /* AVFoundation.framework */; };
+		94795F6D207C77FF001C504E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94795F6C207C77FF001C504E /* CoreGraphics.framework */; };
+		94795F6F207C7809001C504E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94795F6E207C7809001C504E /* UIKit.framework */; };
+		94795F71207C7812001C504E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94795F70207C7812001C504E /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		94795F63207C65DB001C504E /* LibraryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryTableViewController.swift; sourceTree = "<group>"; };
 		94795F65207C6B67001C504E /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		94795F67207C6CAC001C504E /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		94795F6A207C77F6001C504E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		94795F6C207C77FF001C504E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		94795F6E207C7809001C504E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		94795F70207C7812001C504E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +63,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94795F71207C7812001C504E /* Foundation.framework in Frameworks */,
+				94795F6F207C7809001C504E /* UIKit.framework in Frameworks */,
+				94795F6D207C77FF001C504E /* CoreGraphics.framework in Frameworks */,
+				94795F6B207C77F6001C504E /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +78,7 @@
 			children = (
 				94795F33207C49BD001C504E /* FirstMusicPlayer */,
 				94795F32207C49BD001C504E /* Products */,
+				94795F69207C77F5001C504E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +154,17 @@
 				94795F52207C5F25001C504E /* 3.mp3 */,
 			);
 			path = Audio;
+			sourceTree = "<group>";
+		};
+		94795F69207C77F5001C504E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94795F70207C7812001C504E /* Foundation.framework */,
+				94795F6E207C7809001C504E /* UIKit.framework */,
+				94795F6C207C77FF001C504E /* CoreGraphics.framework */,
+				94795F6A207C77F6001C504E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

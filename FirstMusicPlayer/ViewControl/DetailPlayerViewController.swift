@@ -20,6 +20,12 @@ class DetailPlayerViewController: UIViewController {
   
     @IBOutlet var progressView: UIProgressView!
     
+    @IBOutlet var sliderView: UISlider!
+    var smartWidth:CFloat = 0.0
+    
+    @IBOutlet var maxTimer: UILabel!
+    @IBOutlet var currentTimer: UILabel!
+    
     var trackID: Int = 0
     var library = MusicLibrary().library
     var audioPlayer: AVAudioPlayer!
@@ -87,8 +93,27 @@ class DetailPlayerViewController: UIViewController {
     
 
     @objc func updateProgressView(){
+//        if audioPlayer.isPlaying {
+//            progressView.setProgress(Float(audioPlayer.currentTime/audioPlayer.duration), animated: true)
+//        }
+//
+        
         if audioPlayer.isPlaying {
-            progressView.setProgress(Float(audioPlayer.currentTime/audioPlayer.duration), animated: true)
+            
+            
+            sliderView.value = CFloat(audioPlayer.currentTime) // based on ur case
+            sliderView.maximumValue = CFloat(audioPlayer.duration)
+            
+            
+            smartWidth = CFloat(365 * audioPlayer.duration ) / 100
+            
+            currentTimer.text = String(format: "%.2f",sliderView.value / 60)
+            maxTimer.text = String(format: "%.2f", sliderView.maximumValue / 60)
+            
+//            shadowSlider.frame = CGRectMake( shadowSlider.frame.origin.x , shadowSlider.frame.origin.y , smartWidth , shadowSlider.frame.size.height);
+            
+            
+        
         }
         
     }

@@ -56,7 +56,7 @@
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="POR-8M-yb2" customClass="RoundButton" customModule="FirstMusicPlayer" customModuleProvider="target">
-                                <rect key="frame" x="97" y="579" width="50" height="50"/>
+                                <rect key="frame" x="97" y="625" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="previous"/>
                                 <userDefinedRuntimeAttributes>
@@ -75,7 +75,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAf-ZM-F1g" customClass="RoundButton" customModule="FirstMusicPlayer" customModuleProvider="target">
-                                <rect key="frame" x="228" y="579" width="50" height="50"/>
+                                <rect key="frame" x="227" y="625" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="next"/>
                                 <userDefinedRuntimeAttributes>
@@ -93,27 +93,8 @@
                                     <action selector="nextClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zP2-WJ-ptb"/>
                                 </connections>
                             </button>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHW-ZQ-hEL" customClass="RoundButton" customModule="FirstMusicPlayer" customModuleProvider="target">
-                                <rect key="frame" x="43" y="698" width="70" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="pause"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="pauseClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="29M-vM-5zS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obA-kn-Wmd" customClass="RoundButton" customModule="FirstMusicPlayer" customModuleProvider="target">
-                                <rect key="frame" x="152" y="569" width="70" height="70"/>
+                                <rect key="frame" x="151" y="615" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="pause"/>
                                 <userDefinedRuntimeAttributes>
@@ -131,10 +112,28 @@
                                     <action selector="playClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vo4-s2-kWG"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="I3d-Q5-AIH">
+                            <progressView hidden="YES" opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="I3d-Q5-AIH">
                                 <rect key="frame" x="7" y="522" width="361" height="3"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XhN-3s-vmw">
+                                <rect key="frame" x="5" y="532" width="365" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hI0-Fe-SYk">
+                                <rect key="frame" x="16" y="560" width="56" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.57045853140000002" green="0.57047235969999999" blue="0.57046490910000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEl-oT-N0d">
+                                <rect key="frame" x="326" y="559" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -142,7 +141,10 @@
                     <connections>
                         <outlet property="artistLabel" destination="u5m-il-sMz" id="yCg-9T-XmM"/>
                         <outlet property="coverImageView" destination="iaT-t6-pxS" id="U3t-bJ-No7"/>
+                        <outlet property="currentTimer" destination="hI0-Fe-SYk" id="v7b-1g-fNQ"/>
+                        <outlet property="maxTimer" destination="bEl-oT-N0d" id="DmF-VT-Xdj"/>
                         <outlet property="progressView" destination="I3d-Q5-AIH" id="Vmy-yt-2aj"/>
+                        <outlet property="sliderView" destination="XhN-3s-vmw" id="e5w-KE-fvz"/>
                         <outlet property="songTitleLabel" destination="9ny-MT-PDP" id="dwM-OT-AN2"/>
                         <outlet property="toolIcon" destination="obA-kn-Wmd" id="s2i-W4-eaD"/>
                     </connections>

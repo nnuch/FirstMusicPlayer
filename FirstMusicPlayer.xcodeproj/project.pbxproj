@@ -95,7 +95,7 @@
 			children = (
 				94795F4C207C5EBB001C504E /* ViewControl */,
 				94795F4A207C5E93001C504E /* model */,
-				94795F4B207C5EA7001C504E /* support */,
+				94795F4B207C5EA7001C504E /* Support */,
 				94795F38207C49BD001C504E /* Main.storyboard */,
 				94795F3B207C49BD001C504E /* Assets.xcassets */,
 				94795F3D207C49BD001C504E /* LaunchScreen.storyboard */,
@@ -114,12 +114,12 @@
 			path = model;
 			sourceTree = "<group>";
 		};
-		94795F4B207C5EA7001C504E /* support */ = {
+		94795F4B207C5EA7001C504E /* Support */ = {
 			isa = PBXGroup;
 			children = (
 				94795F48207C5B01001C504E /* RoundButton.swift */,
 			);
-			path = support;
+			path = Support;
 			sourceTree = "<group>";
 		};
 		94795F4C207C5EBB001C504E /* ViewControl */ = {
